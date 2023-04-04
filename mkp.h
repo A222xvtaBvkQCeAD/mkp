@@ -4,7 +4,7 @@
 
 class MKP {
 public:
-    // constructs an MKP with a population of random chromosomes
+    // constructs an MKP with a population of randomly encoded chromosomes
     MKP();
     MKP(std::string fname);
 
@@ -20,10 +20,10 @@ public:
     // run one generation of the algorithm
     void run();
 private:
-    static const int POPULATION = 100;                  // population size (number of solutions per generation)
-    double avgFitness;
-    Chromosome population[POPULATION];                  // current population of chromosomes
-    Item itemArray[Chromosome::LENGTH];                 // array of items to run MKP on
+    static const int POPULATION = 100;      // population size (number of solutions per generation)
+    double avgFitness;                      // average fitness of Chromosome population
+    Chromosome population[POPULATION];      // current population of Chromosomes
+    Item itemArray[Chromosome::LENGTH];     // array of items to run MKP on
 
     // compares TOURNAMENT_SIZE + 1 chromosomes from current population and returns the chromosome with the highest fitness
     Chromosome select() const;
