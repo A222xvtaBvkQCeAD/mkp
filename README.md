@@ -1,5 +1,4 @@
-# mkp
-Multiple Knapsack Problem
+# Multiple Knapsack Problem
 
 This program uses an evolutionary algorithm to solve the multiple knapsacks problem (MKP). In this problem, *n* items, each with weights *w<sub>i</sub>* and values *v<sub>i</sub>*, are packed into a set of *K* knapsacks, each of which has capacity *C*. The goal of the problem is to pack the items such that the value contained in the set of knapsacks is maximized while ensuring that the weight does not exceed the capacity of any of the knapsacks. As a trivial example, suppose that there are two knapsacks, each with a maximum capacity of 5, and four items with (weight, value) pairs of *I<sub>1</sub>* = (5, 16), *I<sub>2</sub>* = (5, 20), *I<sub>3</sub>* = (2, 10), *I<sub>4</sub>* = (2, 12). One way to pack the items into the knapsack is to put *I<sub>1</sub>* into the first knapsack and *I<sub>2</sub>* into the second, in which case the knapsacks contain a total value of 36. However, if *I<sub>2</sub>* is packed in one knapsack, and items *I<sub>3</sub>* and *I<sub>4</sub>* are packed in the other, the total value is 42.
 
